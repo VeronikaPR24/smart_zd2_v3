@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KalinovskayaSmartWatch_v3</string>
+    <string name="Ves">Вес</string>
+    <string name="Welcome">Welcome!</string>
+    <string name="VesHint">Введите свой вес</string>
+    <string name="Age">Возраст</string>
+    <string name="AgeHint">Введите свой возраст</string>
+    <string name="Height">Рост</string>
+    <string name="HeightHint">Введите свой рост</string>
+    <string name="Name">Имя</string>
+    <string name="Gender">Пол</string>
+    <string name="Men">Мужчина</string>
+    <string name="Girl">Женщина</string>
+    <string name="NameHint">Введите свое имя</string>
+    <string name="SingIn">Войти</string>
+    <string name="Kcal">Калории</string>
+    <string name="Normal">Ежедневная норма</string>
+    <string name="KcalNow">Калории сегодня</string>
+    <string name="KcalPlus">Добавить калории</string>
+    <string name="InputKcal">Введите калории</string>
+    <string name="Plus">Добавить</string>
+</resources>

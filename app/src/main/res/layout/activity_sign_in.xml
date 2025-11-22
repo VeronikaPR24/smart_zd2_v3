@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    android:background="#FFFF">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/Welcome"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ed2513"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="14dp"
+                android:text="@string/Name"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:hint="@string/NameHint"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="14dp"
+                android:text="@string/Gender"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/Men"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:textColor="#000000"
+                    android:text="@string/Girl"
+                    android:textSize="12dp" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="14dp"
+                android:text="@string/Age"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:hint="@string/AgeHint"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="14dp"
+                android:text="@string/Ves"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/ves"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:hint="@string/VesHint"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="14dp"
+                android:text="@string/Height"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:hint="@string/HeightHint"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="#ed2513"
+            android:text="@string/SingIn"
+            android:textStyle="bold"
+            android:onClick="Registr"
+            android:layout_marginTop="20dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
