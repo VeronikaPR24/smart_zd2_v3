@@ -98,7 +98,6 @@ class KcalActivity : AppCompatActivity() {
                             todayCalories += calories
                             updateCaloriesDisplay()
                             inputKcal.text.clear()
-                            hideKeyboard()
                         }
                     }
                 }
@@ -108,11 +107,6 @@ class KcalActivity : AppCompatActivity() {
 
     private fun updateCaloriesDisplay() {
         tvTotalCalories.text = todayCalories.toString()
-    }
-
-    private fun hideKeyboard() {
-        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        imm.hideSoftInputFromWindow(inputKcal.windowToken, 0)
     }
 
     fun Back(view: View) {
